@@ -1,0 +1,62 @@
+
+settings =
+{
+	orientation =
+	{
+		default = "portrait",
+		content = "portrait",
+		supported =
+		{
+			"portrait", 
+			"portraitUpsideDown",
+		},
+	},
+
+
+	iphone =
+	{
+		plist =
+		{
+			CFBundleDisplayName = "CybAiRBot 2012",
+			MinimumOSVersion = "4.3",
+			UIStatusBarHidden = true,
+			UIPrerenderedIcon = true,
+			UIApplicationExitsOnSuspend = true,
+			
+			UIInterfaceOrientation = "UIInterfaceOrientationPortrait",
+			
+			UISupportedInterfaceOrientations = 
+			{
+				"UIInterfaceOrientationPortrait",
+				"UIInterfaceOrientationPortraitUpsideDown",
+			},
+			
+			UIAppFonts = 
+			{
+			},
+			
+			CFBundleIconFile = "Icon.png",
+			CFBundleIconFiles = 
+			{
+				"Icon.png",
+				"Icon@2x.png",
+				"Icon-Small@2x.png",
+				"Icon-72.png",
+				"Icon-Small-50.png",
+				"Icon-Small.png"
+			},
+		},
+	},
+
+	androidPermissions = {
+		"android.permission.INTERNET",
+	},
+}
+
+settings.iphone.plist["CFBundleShortVersionString"] = 1.0
+settings.iphone.plist["UIInterfaceOrientation~ipad"] = "UIInterfaceOrientationPortrait"
+settings.iphone.plist["UISupportedInterfaceOrientations~ipad"] = 
+{
+	"UIInterfaceOrientationPortrait",
+	"UIInterfaceOrientationPortraitUpsideDown",
+}
